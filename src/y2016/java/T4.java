@@ -22,7 +22,7 @@ public class T4 {
 		xingzou(0,0,0);
 	}	
 	public static void xingzou(int x,int y,int now) {
-		route[now]=4*x+y;
+		route[now]=N*x+y;
 		map[x][y]=1;
 		numnow[0][y]++;
 		numnow[1][x]++;
