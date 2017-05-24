@@ -33,18 +33,18 @@ public class T123 {
 			c.add(a);
 		}
 		d.add(c);
+		int i=0;
 		for(int k=1;k<x-n*a+1;k++) {
 			System.out.println("in");
-			for(int i=0;i<d.size();i++) {
-				for(int j=0;j<d.get(i).size();j++) {
-					ArrayList<Integer> temp=new ArrayList<>();
-					temp=(ArrayList<Integer>)d.get(i).clone();
-					temp.set(j, temp.get(j)+1);
-					d.add(temp);
-				}
+			for(int j=0;j<d.get(i).size();j++) {
+				ArrayList<Integer> temp=new ArrayList<>();
+				temp=(ArrayList<Integer>)d.get(i).clone();
+				temp.set(j, temp.get(j)+1);
+				d.add(temp);
 			}
+			i++;
 		}
-		for(int i=0;i<d.size();i++) {
+		for(i=0;i<d.size();i++) {
 			for(int j=0;j<d.get(i).size();j++) {
 				System.out.print(d.get(i).get(j)+" ");
 			}
